@@ -270,6 +270,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     MiatollSettings \
+    SM6250DeviceAsWebcam \
     SM6250Frameworks \
     SM6250SystemUI \
     TelephonyResCommon \
