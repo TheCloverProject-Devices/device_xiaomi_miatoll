@@ -10,6 +10,9 @@ debug.performance.tuning=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
