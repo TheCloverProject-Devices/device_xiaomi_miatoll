@@ -85,6 +85,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
 KERNEL_CC := CC=clang
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
