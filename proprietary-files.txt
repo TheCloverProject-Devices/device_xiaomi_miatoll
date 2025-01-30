@@ -1,4 +1,6 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
+# excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
+# joyeuse: V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
 # mojito: V14.0.9.0.SKGMIXM (MOJITOGlobal)
 # sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
