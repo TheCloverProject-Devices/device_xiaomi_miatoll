@@ -169,11 +169,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
-    SM6250Frameworks \
-    SM6250SystemUI \
-    TelephonyResCommon \
-    WifiOverlay
+    MiatollCarrierConfig \
+    MiatollFrameworks \
+    MiatollSystemUI \
+    MiatollTelephony \
+    MiatollWifi
 
 PRODUCT_PACKAGES += \
     SM6250Aperture \
