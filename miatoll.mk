@@ -177,9 +177,7 @@ PRODUCT_PACKAGES += \
     MiatollWifi
 
 PRODUCT_PACKAGES += \
-    SM6250Aperture \
-    SM6250LineageDialer \
-    SM6250LineageSDK
+    SM6250Aperture
 
 # Partitions
 PRODUCT_PACKAGES += \
