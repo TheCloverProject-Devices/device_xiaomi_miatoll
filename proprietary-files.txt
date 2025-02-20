@@ -5,6 +5,8 @@
 # sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 # cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
+# OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
+# sweet: V816.0.9.0.THGTRXM (SWEETGlobal)
 
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
@@ -468,6 +470,32 @@ vendor/lib64/libcvp.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+
+# Dolby (Entry point) - from OP9R
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|5e742e5691c874877ca78dc7664bb7c4a97fe9af
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
+
+# Dolby (Equalizer) - from OP9R
+vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
+vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
+vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
+vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
+
+# Dolby (Equalizer) - from sweet
+vendor/lib/soundfx/libswgamedap.so|2519230d1f9fa8690e1cfe102fa259c4e66f495d
+vendor/lib/soundfx/libswvqe.so|681af2caea4d83b77feeffd988e0be6b72b26c40
+vendor/lib64/soundfx/libswgamedap.so|bf92380e54bfe9a091424e026824791f439b6fbc
+vendor/lib64/soundfx/libswvqe.so|6ca56022ba86dcf69c465d763748c3ea854c8ebe
+
+# Dolby (dependencies) - from sweet
+system/system/lib/libstagefright_foundation.so:vendor/lib/libstagefright_foundation_sweet.so;FIX_SONAME|e0520d021543d6594625a13fe2b2425e8877bd37|06c83d3f69ab66b8c8c2183b1cfb5e03dd96e289
+system/system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_foundation_sweet.so;FIX_SONAME|705378d18c6e9061bf6ebfe353dded7121a4af73|82ff5f0e1ba5c29240864568dc293af4a8de3bce
+vendor/lib/libdapparamstorage.so|adad562803bd15c3793d14bc2c9bb1ef36e70854
+vendor/lib64/libdapparamstorage.so|67ae45857561cb0450b872de1e7896ad7346481c
+vendor/lib64/libdlbdsservice.so|508e066110153d24d6b704f42b2f846bacc61a23|23b6ca3c22ca47b8b8df1461fce0a7b9f9da6f2f
 
 # DPM (system) - from sunstone
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
