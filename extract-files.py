@@ -141,6 +141,11 @@ blob_fixups: blob_fixups_user_type = {
         .patchelf_version('0_17_2')
         .add_needed('libgui_shim_miuicamera.so'),
     ### Miui Camera fix End ###
+    ### Dolby Start ###
+    ('vendor/lib/libstagefrightdolby.so', 'vendor/lib64/libstagefrightdolby.so',
+    'vendor/lib64/libdlbdsservice.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation_sweet.so'),
+    ### Dolby End ###
 }  # fmt: skip
 
 module = ExtractUtilsModule(
