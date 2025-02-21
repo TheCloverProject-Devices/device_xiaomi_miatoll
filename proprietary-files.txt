@@ -515,6 +515,18 @@ vendor/lib64/soundfx/libmsstwrapper.so|4562681d7d0eb4286c94d1233d6a542a0232612e
 vendor/lib64/libaualgo_foundation.so|76e5be34a2a62db6a0692a37d7b1719bbd83b87f
 vendor/lib64/libaualgo_sst_component.so|d4de37a64fe3b2f9c7751844e52fffc75f5b983c
 
+# Dolby (C2 Codecs) - from cancunf
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|768a4736ae7d0bd6015b07d4d92d04310323c6c1
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
+vendor/lib/libdapparamstorage.so:vendor/lib/libdapparamstorage-v34_cancunf.so;FIX_SONAME|25cbb0986684c1ee7e439509a78a985197238c35|bef835460bae69d97ee8dd75573fb2ac7b57d153
+vendor/lib/liboem_specific.so|c746b07e8d2afef27d296109bad83846130efe1d
+vendor/lib64/libcodec2_soft_ac4dec.so|6a6b0f3fc05db172a044278fc74cd09b23f26ffc|58431ae6f2e0c92a1dcf5a6d6eb92134cf44f365
+vendor/lib64/libcodec2_soft_ddpdec.so|2bb7e748e79a6621294ab98c6e761aea20b8278b|fdbedfcbce7b03f58cd03b75792ffa8d8b3bcc96
+vendor/lib64/libcodec2_store_dolby.so|177daebd62a5345d890ec05b3fd1e9a33d6d003b
+vendor/lib64/libdapparamstorage.so:vendor/lib64/libdapparamstorage-v34_cancunf.so;FIX_SONAME|9e6ae3ec124265e41f222013b9d986d596841fc6|ee7a9e6668d48426e00a75baf20f551285e41a20
+vendor/lib64/libdeccfg.so|1a5693678cff64abc73cf9ddf70bd20f3b21d430|08cbcb457e33cb2b684dbf8359f95a1e06a23611
+vendor/lib64/liboem_specific.so|d4893fe8955c9fc8740060260a34d16477bcbf11
+
 # DPM (system) - from sunstone
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5

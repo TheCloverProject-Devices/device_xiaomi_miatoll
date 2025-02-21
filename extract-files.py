@@ -148,6 +148,10 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libdlbpreg.so', 'vendor/lib/soundfx/libdlbvol.so',
     'vendor/lib64/libdlbpreg.so', 'vendor/lib64/soundfx/libdlbvol.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v34_cancunf.so'),
+    ('vendor/lib64/libcodec2_soft_ac4dec.so', 'vendor/lib64/libcodec2_soft_ddpdec.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v34_cancunf.so'),
+    ('vendor/lib64/libdeccfg.so'): blob_fixup()
+        .replace_needed('libdapparamstorage.so', 'libdapparamstorage-v34_cancunf.so'),
     ### Dolby End ###
 }  # fmt: skip
 
