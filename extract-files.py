@@ -145,6 +145,9 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libstagefrightdolby.so', 'vendor/lib64/libstagefrightdolby.so',
     'vendor/lib64/libdlbdsservice.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation_sweet.so'),
+    ('vendor/lib/libdlbpreg.so', 'vendor/lib/soundfx/libdlbvol.so',
+    'vendor/lib64/libdlbpreg.so', 'vendor/lib64/soundfx/libdlbvol.so'): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v34_cancunf.so'),
     ### Dolby End ###
 }  # fmt: skip
 

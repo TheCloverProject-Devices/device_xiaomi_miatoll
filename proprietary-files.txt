@@ -7,6 +7,7 @@
 # cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
 # OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
 # sweet: V816.0.9.0.THGTRXM (SWEETGlobal)
+# cancunf: user-14-U1TDJ34.100-9ea96d-release-keys
 
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
@@ -496,6 +497,14 @@ system/system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_fou
 vendor/lib/libdapparamstorage.so|adad562803bd15c3793d14bc2c9bb1ef36e70854
 vendor/lib64/libdapparamstorage.so|67ae45857561cb0450b872de1e7896ad7346481c
 vendor/lib64/libdlbdsservice.so|508e066110153d24d6b704f42b2f846bacc61a23|23b6ca3c22ca47b8b8df1461fce0a7b9f9da6f2f
+
+# Dolby (Equalizer) - from cancunf
+system/system/lib/libstagefright_foundation.so:vendor/lib/libstagefright_foundation-v34_cancunf.so;FIX_SONAME|1efd99c25d49040c8ed563a45c99180fb1ffd158|9357374045de78f09fe561d9ef562c683ed30f62
+system/system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_foundation-v34_cancunf.so;FIX_SONAME|80450cac7dfaeb8c5c9fbc82092fa5ad41263363|e7891159bea7105ff58508298ec9b9af8db49553
+vendor/lib/libdlbpreg.so|ee9b634f276642cb6a6d2cfb161911c6d5c48d9b|e5a96265e728bf3493276bca39fb27899e552b8b
+vendor/lib/soundfx/libdlbvol.so|ed6c459b113c2ec39517a99ead9183d22e7078e7|8ef4354a2a4b2a026b41f4952f9bc79a4f6c9e30
+vendor/lib64/libdlbpreg.so|918083ee45de22591beeb3403bf3b2b95edb26c6|6141cd9fa1916bf18a0ec22758d0cd9ba367b881
+vendor/lib64/soundfx/libdlbvol.so|56f9f586e3a889a782d3a1aeb1fc8bb6123aeb5b|97fe17034453f0df821d945e0a45275f680b5668
 
 # DPM (system) - from sunstone
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
