@@ -57,6 +57,7 @@
         <!-- DOLBY DVL -->
         <library name="dvl" path="libdlbvol.so"/>
         <!-- DOLBY END -->
+        <library name="moto_sst" path="libmsstwrapper.so"/>
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -127,6 +128,7 @@
         <effect name="dlb_system_listener" library="dvl" uuid="874db4d8-051d-4b7b-bd95-a3bebc837e9e"/>
         <effect name="dlb_notification_listener" library="dvl" uuid="1f0091e3-6ad8-40fe-9b09-5948f9a26e7e"/>
         <!-- DOLBY END -->
+        <effect name="moto_sst" library="moto_sst" uuid="01325f27-2882-44f7-bdec-e7ce4ea3a581"/>
     </effects>
     <postprocess>
         <stream type="music">
