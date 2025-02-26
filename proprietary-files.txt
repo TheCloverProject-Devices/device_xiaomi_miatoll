@@ -506,6 +506,15 @@ vendor/lib/soundfx/libdlbvol.so|ed6c459b113c2ec39517a99ead9183d22e7078e7|8ef4354
 vendor/lib64/libdlbpreg.so|918083ee45de22591beeb3403bf3b2b95edb26c6|6141cd9fa1916bf18a0ec22758d0cd9ba367b881
 vendor/lib64/soundfx/libdlbvol.so|56f9f586e3a889a782d3a1aeb1fc8bb6123aeb5b|97fe17034453f0df821d945e0a45275f680b5668
 
+# Dolby (Spatial sound) - from cancunf
+vendor/etc/aualgo/aualgo_sst.conf|e7f15dcb7e24adc10a03a4b75c494eda52c203eb
+vendor/lib/soundfx/libmsstwrapper.so|e537b3e77381ed4d3e350401a9e177db9d6a6b19
+vendor/lib/libaualgo_foundation.so|44c1fdfdca0c0074b1f16bd202bf33d6bd50ff89
+vendor/lib/libaualgo_sst_component.so|7c097d6147dc957854ae46249c006e062428fb90
+vendor/lib64/soundfx/libmsstwrapper.so|4562681d7d0eb4286c94d1233d6a542a0232612e
+vendor/lib64/libaualgo_foundation.so|76e5be34a2a62db6a0692a37d7b1719bbd83b87f
+vendor/lib64/libaualgo_sst_component.so|d4de37a64fe3b2f9c7751844e52fffc75f5b983c
+
 # DPM (system) - from sunstone
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
