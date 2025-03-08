@@ -65,7 +65,7 @@ lib_fixups: lib_fixups_user_type = {
         'libmegface',
     ): lib_fixup_vendor_suffix,
     (
-        'libwpa_client',
+
     ): lib_fixup_remove,
 }
 
