@@ -172,6 +172,7 @@ vendor.display.vds_allow_hwc=1
 persist.vendor.audio_fx.current=dolby
 ro.hardware.soc.manufacturer=qcom
 ro.vendor.audio.dolby.dax.support=true
+ro.vendor.dolby.dax.version=DAX3_3.11.0.10_r2
 
 # Dolby (Enable the service)
 ro.vendor.product.device.db=OP_DEVICE
