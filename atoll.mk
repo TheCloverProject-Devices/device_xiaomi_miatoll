@@ -13,7 +13,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Inherit the private key repository for signing the build
--include vendor/aosp/keys/keys.mk
+-include vendor/clover/keys/keys.mk
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
