@@ -1,26 +1,18 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
+# OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
+# cancunf: user-14-U1TDJ34.100-9ea96d-release-keys
+# cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
 # joyeuse: V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
 # mojito: V14.0.9.0.SKGMIXM (MOJITOGlobal)
 # sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
-# vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
-# cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
-# OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
 # sweet: V816.0.9.0.THGTRXM (SWEETGlobal)
-# cancunf: user-14-U1TDJ34.100-9ea96d-release-keys
+# vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
 
 # ACDB
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_General_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Global_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_workspaceFile.qwsp
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
@@ -29,6 +21,14 @@ vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_General_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Global_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Handset_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Hdmi_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Headset_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Speaker_cal.acdb
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ACDB loader
@@ -84,8 +84,8 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/audio.primary.atoll.so
 vendor/lib/libadm.so
-vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libhdmipassthru.so
@@ -199,7 +199,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 
 # Camera (components)
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/com.almalence.node.sr.so
 vendor/lib64/camera/components/com.altek.node.depurple.so
 vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
@@ -265,6 +264,7 @@ vendor/lib64/camera/components/com.xiaomi.node.mifilter.so
 vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 vendor/lib64/camera/components/libdepthmapwrapper.so
 
 # Camera (configs)
@@ -382,8 +382,8 @@ vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin
 
 # Camera megvii
 vendor/etc/camera/megviifacepp_0_5_2_model
-vendor/lib64/libmegface.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so;MODULE_SUFFIX=_vendor
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -393,13 +393,15 @@ vendor/lib64/libcdsprpc.so
 
 # Charger
 vendor/bin/hvdcp_opti
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
+vendor/etc/cne/mwqem.conf
+vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -427,8 +429,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/mwqem.conf
-vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/lib64/libcne.so
@@ -508,12 +508,12 @@ vendor/lib64/soundfx/libdlbvol.so|56f9f586e3a889a782d3a1aeb1fc8bb6123aeb5b|97fe1
 
 # Dolby (Spatial sound) - from cancunf
 vendor/etc/aualgo/aualgo_sst.conf|e7f15dcb7e24adc10a03a4b75c494eda52c203eb
-vendor/lib/soundfx/libmsstwrapper.so|e537b3e77381ed4d3e350401a9e177db9d6a6b19
 vendor/lib/libaualgo_foundation.so|44c1fdfdca0c0074b1f16bd202bf33d6bd50ff89
 vendor/lib/libaualgo_sst_component.so|7c097d6147dc957854ae46249c006e062428fb90
-vendor/lib64/soundfx/libmsstwrapper.so|4562681d7d0eb4286c94d1233d6a542a0232612e
+vendor/lib/soundfx/libmsstwrapper.so|e537b3e77381ed4d3e350401a9e177db9d6a6b19
 vendor/lib64/libaualgo_foundation.so|76e5be34a2a62db6a0692a37d7b1719bbd83b87f
 vendor/lib64/libaualgo_sst_component.so|d4de37a64fe3b2f9c7751844e52fffc75f5b983c
+vendor/lib64/soundfx/libmsstwrapper.so|4562681d7d0eb4286c94d1233d6a542a0232612e
 
 # Dolby (C2 Codecs) - from cancunf
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service|768a4736ae7d0bd6015b07d4d92d04310323c6c1
@@ -550,8 +550,8 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/gpfspath_oem_config.xml
+vendor/etc/init/qseecomd.rc
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
@@ -590,8 +590,8 @@ vendor/lib64/libgoodixhwfingerprint.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/ftm_fm_lib.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 
 # Gatekeeper
@@ -665,9 +665,9 @@ vendor/app/CACertService/CACertService.apk
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
 vendor/lib64/libcacertclient.so
@@ -841,7 +841,6 @@ system/lib64/librefocus_mibokeh.so;SYMLINK=system/system/priv-app/MiuiExtraPhoto
 system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk|f195626fcc97904aa858e50d0746d091263fefa7
 
 # MiuiExtraPhoto (dependencies)
-vendor/lib64/libmpbase.so:system/lib64/libmpbase.so;MODULE_SUFFIX=_system|e6b51e2d501f434eea15ecdc275011d1498301ae
 vendor/lib64/libOpenCL.so:system/lib64/libOpenCL.so;MODULE_SUFFIX=_system|2fe1abc3b202e5b70bcf2ad7870721b0a9ddb81b
 vendor/lib64/libarcsoft_dualcam_refocus.so:system/lib64/libarcsoft_dualcam_refocus.so;MODULE_SUFFIX=_system|cd52db63782faea7f8200d6b39d71c68e1818ced
 vendor/lib64/libarcsoft_dualcam_refocus_front.so:system/lib64/libarcsoft_dualcam_refocus_front.so;MODULE_SUFFIX=_system|fc8c1413fde708a33ab6bda67f3e40f8a4e1abd6
@@ -849,15 +848,10 @@ vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so:system/lib64/libarcsoft_dualca
 vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so:system/lib64/libarcsoft_dualcam_refocus_rear_w.so;MODULE_SUFFIX=_system|5cbeb9bef2f37a731d8daee473b784bfeb19cd84
 vendor/lib64/libarcsoft_portrait_lighting.so:system/lib64/libarcsoft_portrait_lighting.so;MODULE_SUFFIX=_system|1bc7b14fe69e617529e4dda74e4ef1081ea2ada0
 vendor/lib64/libarcsoft_portrait_lighting_c.so:system/lib64/libarcsoft_portrait_lighting_c.so;MODULE_SUFFIX=_system|ca42fa6fc25e231ca70e1caf80a08b18ccfd3d99
+vendor/lib64/libmpbase.so:system/lib64/libmpbase.so;MODULE_SUFFIX=_system|e6b51e2d501f434eea15ecdc275011d1498301ae
 
 # Motorola framework
 system_ext/app/MotoSignatureApp/MotoSignatureApp.apk|98027bccd4ec14cb7887cde068e35f6b0ecd0a44
-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk|25deb5bdb18d55dee1b9bd1de2ba46e353c62780
-system_ext/framework/com.motorola.frameworks.core.addon.jar|8431ff519b0a3e02411a0096898ee8acb372b9b7
-system_ext/framework/com.motorola.motosignature.jar|1607b24909a030ddec7f05b91356e6b2d76c0b6b
-system_ext/framework/moto-checkin.jar|989119b230c01ba95341d29de45e38120a68f394
-system_ext/framework/moto-settings.jar|0ebdf871ededa1eb9c5186bdb4a9055d89594779
-system_ext/framework/moto.jar|6c797a7f205f2ce5d939c000f21c6625daf0c33f
 system_ext/etc/permissions/com.motorola.frameworks.core.addon.xml|b98f53235c8d4c1962d3b279840e2a074d0ddd10
 system_ext/etc/permissions/com.motorola.motosignature.xml|e94cdcfd1b92b6bd1d0b53c3c2ed8bffe362e6ac
 system_ext/etc/permissions/moto-checkin.xml|373f75676a0ac7915f5bc49ec43fd99c38dd9c1b
@@ -866,10 +860,16 @@ system_ext/etc/permissions/moto.xml|5521a530e243f6e5e928018320d4e9b819134fbb
 system_ext/etc/permissions/privapp-com.motorola.android.providers.settings.xml|44bd70f7309ad6407d43391bcdb5b7e05ae8c363
 system_ext/etc/sysconfig/config-com.motorola.android.providers.settings.xml|1f804d789dd7c8b7657a6f07e23bcac1ce5c701c
 system_ext/etc/sysconfig/config-com.motorola.motosignature.app.xml|5b2c138d4be962f052700fb3ca00d822bbf836da
+system_ext/framework/com.motorola.frameworks.core.addon.jar|8431ff519b0a3e02411a0096898ee8acb372b9b7
+system_ext/framework/com.motorola.motosignature.jar|1607b24909a030ddec7f05b91356e6b2d76c0b6b
+system_ext/framework/moto-checkin.jar|989119b230c01ba95341d29de45e38120a68f394
+system_ext/framework/moto-settings.jar|0ebdf871ededa1eb9c5186bdb4a9055d89594779
+system_ext/framework/moto.jar|6c797a7f205f2ce5d939c000f21c6625daf0c33f
+system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk|25deb5bdb18d55dee1b9bd1de2ba46e353c62780
 
 # Motorola audio framework
-system/system/framework/motoaudioeffectsdk.jar:system/framework/motoaudioeffectsdk.jar|dd15e9363690ba6652493d194032200fd4a7c527
 system/system/etc/permissions/motoaudioeffectsdk.xml:system/etc/permissions/motoaudioeffectsdk.xml|8a484c48cb5bb0206929d27083985126a0108de5
+system/system/framework/motoaudioeffectsdk.jar:system/framework/motoaudioeffectsdk.jar|dd15e9363690ba6652493d194032200fd4a7c527
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -983,14 +983,15 @@ system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/bin/hw/qcrild
 vendor/bin/adpl
+vendor/bin/hw/qcrild
 vendor/bin/ipacm-diag
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
+vendor/etc/Diag.cfg
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/dataadpl.rc
@@ -1002,7 +1003,6 @@ vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
-vendor/etc/Diag.cfg
 vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
@@ -1046,6 +1046,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+vendor/radio/qcril_database/qcril.db
 vendor/radio/qcril_database/upgrade/0_initial.sql
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
@@ -1103,7 +1104,6 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql
-vendor/radio/qcril_database/qcril.db
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
