@@ -94,7 +94,10 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+    $(LOCAL_PATH)/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    $(LOCAL_PATH)/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax-default-spatializer.xml \
+    $(LOCAL_PATH)/dolby/dax-moto_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_1.xml \
+    $(LOCAL_PATH)/dolby/dax-moto_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_2.xml
 # MotoDolbyDax3 Permissions & Sysconfig
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dolby/system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml \
