@@ -184,6 +184,11 @@ vendor.product.manufacturer=OPD
 ro.audio.monitorrotation=true
 ro.vendor.audio.moto_sst_supported=false
 
+# Dolby (Spatial Audio)
+ro.audio.spatializer_enabled=true
+ro.audio.stereo_spatialization_enabled=true
+persist.vendor.audio.dolby.tws_tuning=true
+
 # Disable Log spams
 persist.log.tag.AnalyticsService=S
 persist.log.tag.KernelCpuUidActiveTimeReader=S
