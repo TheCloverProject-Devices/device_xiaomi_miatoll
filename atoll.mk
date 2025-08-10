@@ -67,10 +67,10 @@ $(call soong_config_set,camera,override_format_from_reserved,true)
 PRODUCT_PACKAGES += libgui_shim_miuicamera
 
 # Camera (MiuiCamera)
-PRODUCT_PACKAGES += MiuiCamera
+# PRODUCT_PACKAGES += MiuiCamera
 
-PRODUCT_DEXPREOPT_SPEED_APPS += MiuiCamera
-TARGET_USES_MIUI_CAMERA := true
+# PRODUCT_DEXPREOPT_SPEED_APPS += MiuiCamera
+# TARGET_USES_MIUI_CAMERA := true
 
 # Camera (MiuiCamera permissions & sysconfig)
 PRODUCT_COPY_FILES += \
