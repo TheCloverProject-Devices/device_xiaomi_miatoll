@@ -1,5 +1,6 @@
 # Audio
 audio.offload.min.duration.secs=30
+audio.spatializer.priority=3
 
 # Blur
 ro.launcher.blur.appLaunch=0
