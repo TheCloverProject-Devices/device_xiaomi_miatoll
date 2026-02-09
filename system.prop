@@ -11,6 +11,7 @@ disableBlurs=true
 ro.sf.blurs_are_caro=1
 ro.miui.has_real_blur=0
 persist.sys.background_blur_supported=false
+ro.surface_flinger.blur_disabled_by_default=false
 
 # Camera
 persist.sys.cam.skip_detach_image=true
