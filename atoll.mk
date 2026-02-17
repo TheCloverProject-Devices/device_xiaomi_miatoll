@@ -50,15 +50,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth.audio@2.1.vendor \
-    android.hardware.bluetooth.audio@2.2-impl \
-    android.hardware.bluetooth.audio@2.2.vendor \
     android.hardware.soundtrigger@2.3-impl
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.a2dp@1.0 \
-    android.hardware.bluetooth.a2dp@1.0.vendor \
-    android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -97,7 +89,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
 
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Camera (Shim MiuiCamera libs)
 PRODUCT_PACKAGES += libgui_shim_miuicamera
@@ -181,11 +173,6 @@ PRODUCT_PACKAGES += \
     gps.conf \
     izat.conf
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery
-
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
@@ -208,19 +195,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -266,7 +245,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    MiatollSettings \
     SM6250DeviceAsWebcam \
     SM6250Frameworks \
     SM6250SystemUI \
